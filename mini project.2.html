@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Felix IT System</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(
+          to right,
+          #6a11cb,
+          #2575fc
+        ); /* Attractive gradient */
+        color: white;
+      }
+      h1 {
+        text-align: center;
+        padding: 20px;
+        font-size: 36px;
+      }
+      .form-container {
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.15
+        ); /* Transparent white for contrast */
+        padding: 20px;
+        max-width: 400px;
+        margin: 20px auto;
+        transition: backgound-color 0.3s ease; /*smooth hover effect*/
+
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      label {
+        display: block;
+        margin-top: 15px;
+        font-weight: bold;
+      }
+      input,
+      textarea,
+      select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+      }
+      input[type="submit"] {
+        background-color: lab(96.25% -26.34 92.34);
+        color: black;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      input[type="submit"]:hover {
+        background-color: lab(96.25% -26.34 92.34);
+      }
+      .primary-button:hover {
+        background-color: #0056b3; /* Darker Blue on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Felix IT System</h1>
+
+    <div class="form-container">
+      <form>
+        <label for="name">Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required
+        />
+
+        <label for="address">Address:</label>
+        <textarea
+          id="address"
+          name="address"
+          rows="3"
+          placeholder="Enter your address"
+          required
+        ></textarea>
+
+        <label for="phone">Phone No:</label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Enter your phone number"
+          required
+        />
+
+        <label for="course">Course Details:</label>
+        <select id="course" name="course" required>
+          <option value="">-- Select Course --</option>
+          <option value="web">Web Development</option>
+          <option value="uiux">UI/UX Design</option>
+          <option value="data">Data Science</option>
+          <option value="mobile">Mobile App Development</option>
+        </select>
+
+        <input type="submit" value="Save" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+h1 {
+  color: rgb(223, 138, 20);
+  text-align: center;
+  text-decoration: dotted;
+  letter-spacing: normal;
+  border: none;
+  border-radius: 5px;
+  word-spacing: normal;
+  cursor: pointer;
+
+  background-color: aquamarine;
+  padding-top: 0%;
+  box-shadow: inset;
+  width: 450px;
+}
+img {
+  width: 250px;
+  height: 130px;
+}
